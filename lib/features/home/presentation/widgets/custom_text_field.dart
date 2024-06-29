@@ -9,11 +9,19 @@ class CustomTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       decoration: InputDecoration(
-        prefixIcon: const Icon(
+        prefixIcon: Icon(
           FontAwesomeIcons.magnifyingGlass,
           size: 16,
+          color: Colors.grey.withOpacity(
+            .5,
+          ),
         ),
         hintText: 'Поиск',
+        hintStyle: TextStyle(
+          color: Colors.grey.withOpacity(
+            .5,
+          ),
+        ),
         filled: true,
         fillColor: Colors.grey.withOpacity(.1),
         enabledBorder: buildBorder(),
